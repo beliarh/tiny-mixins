@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "homepage": "https://github.com/beliarh/tiny-mixins",
   "authors": [
-    "Dmitry Artemov <worldbreaker@mail.ru>"
+    "Dmitry Artemov"
   ],
   "description": "Tiny SASS (SCSS) mixins",
   "main": "_tiny-mixins.scss",
