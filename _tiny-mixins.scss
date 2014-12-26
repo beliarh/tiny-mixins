@@ -65,50 +65,50 @@
 }
 
 @mixin triangle($direction, $width, $height, $color) {
-    $border-top-width: 0 !important;
-    $border-top-color: rgba(0, 0, 0, 0) !important;
-    $border-right-width: 0 !important;
-    $border-right-color: rgba(0, 0, 0, 0) !important;
-    $border-bottom-width: 0 !important;
-    $border-bottom-color: rgba(0, 0, 0, 0) !important;
-    $border-left-width: 0 !important;
-    $border-left-color: rgba(0, 0, 0, 0) !important;
+    $top-width: 0;
+    $top-color: rgba(0, 0, 0, 0);
+    $right-width: 0;
+    $right-color: rgba(0, 0, 0, 0);
+    $bottom-width: 0;
+    $bottom-color: rgba(0, 0, 0, 0);
+    $left-width: 0;
+    $left-color: rgba(0, 0, 0, 0);
     @if $direction == (to top) {
-        $border-left-width: $width / 2;
-        $border-right-width: $width / 2;
-        $border-bottom-width: $height;
-        $border-bottom-color: $color;
+        $left-width: $width / 2;
+        $right-width: $width / 2;
+        $bottom-width: $height;
+        $bottom-color: $color;
     } @else if $direction == (to top right) or $direction == (to right top) {
-        $border-right-width: $width;
-        $border-right-color: $color;
-        $border-bottom-width: $height;
+        $right-width: $width;
+        $right-color: $color;
+        $bottom-width: $height;
     } @else if $direction == (to right) {
-        $border-top-width: $height / 2;
-        $border-bottom-width: $height / 2;
-        $border-left-width: $width;
-        $border-left-color: $color;
+        $top-width: $height / 2;
+        $bottom-width: $height / 2;
+        $left-width: $width;
+        $left-color: $color;
     } @else if $direction == (to bottom right) or $direction == (to right bottom) {
-        $border-left-width: $width;
-        $border-bottom-width: $height;
-        $border-bottom-color: $color;
+        $left-width: $width;
+        $bottom-width: $height;
+        $bottom-color: $color;
     } @else if $direction == (to bottom) {
-        $border-top-width: $height;
-        $border-top-color: $color;
-        $border-left-width: $width / 2;
-        $border-right-width: $width / 2;
+        $top-width: $height;
+        $top-color: $color;
+        $left-width: $width / 2;
+        $right-width: $width / 2;
     } @else if $direction == (to bottom left) or $direction == (to left bottom) {
-        $border-top-width: $height;
-        $border-left-width: $width;
-        $border-left-color: $color;
+        $top-width: $height;
+        $left-width: $width;
+        $left-color: $color;
     } @else if $direction == (to left) {
-        $border-top-width: $height / 2;
-        $border-bottom-width: $height / 2;
-        $border-right-width: $width;
-        $border-right-color: $color;
+        $top-width: $height / 2;
+        $bottom-width: $height / 2;
+        $right-width: $width;
+        $right-color: $color;
     } @else if $direction == (to top left) or $direction == (to left top) {
-        $border-top-width: $height;
-        $border-top-color: $color;
-        $border-right-width: $width;
+        $top-width: $height;
+        $top-color: $color;
+        $right-width: $width;
     } @else {
         @warn 'Incorrect triangle direction: #{inspect($direction)}';
         $direction: false;
@@ -118,13 +118,7 @@
         width: 0;
         height: 0;
         border-style: solid;
-        border-top-width: $border-top-width;
-        border-top-color: $border-top-color;
-        border-right-width: $border-right-width;
-        border-right-color: $border-right-color;
-        border-bottom-width: $border-bottom-width;
-        border-bottom-color: $border-bottom-color;
-        border-left-width: $border-left-width;
-        border-left-color: $border-left-color;
+        border-width: $top-width $right-width $bottom-width $left-width;
+        border-color: $top-color $right-color $bottom-color $left-color;
     }
 }
