@@ -112,7 +112,6 @@
         $direction: false;
     }
     @if $direction {
-        content: '';
         width: 0;
         height: 0;
         border-style: solid;
