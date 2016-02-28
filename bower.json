@@ -1,16 +1,19 @@
 {
   "name": "tiny-mixins",
-  "version": "1.0.0",
-  "homepage": "https://github.com/beliarh/tiny-mixins",
-  "authors": [
-    "Dmitry Artemov"
-  ],
+  "version": "1.0.1",
   "description": "Tiny SASS (SCSS) mixins",
   "main": "_tiny-mixins.scss",
+  "authors": [
+    "Dmitry Artemov <beliarh93@gmail.com>"
+  ],
+  "license": "MIT",
   "keywords": [
     "sass",
     "scss",
     "mixin"
   ],
-  "license": "MIT"
+  "homepage": "https://github.com/beliarh/tiny-mixins",
+  "ignore": [
+    "**/.*"
+  ]
 }

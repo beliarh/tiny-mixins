@@ -1,0 +1,21 @@
+{
+  "name": "tiny-mixins",
+  "version": "1.0.1",
+  "description": "Tiny SASS (SCSS) mixins",
+  "main": "_tiny-mixins.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beliarh/tiny-mixins.git"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "mixin"
+  ],
+  "author": "Dmitry Artemov <beliarh93@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beliarh/tiny-mixins/issues"
+  },
+  "homepage": "https://github.com/beliarh/tiny-mixins#readme"
+}
