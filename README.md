@@ -4,7 +4,7 @@ Tiny Mixins (Sass):
 Clearfix
 --------
 ```scss
-@mixin clearfix() { ... }
+@mixin clearfix() { /* ... */ }
 ```
 
 **Usage:**  
@@ -17,7 +17,7 @@ Clearfix
 Reset
 -----
 ```scss
-@mixin reset() { ... }
+@mixin reset() { /* ... */ }
 ```
 
 **Usage:**  
@@ -28,7 +28,7 @@ Reset
 Triangle
 --------
 ```scss
-@mixin triangle($direction, $width, $height, $color) { ... }
+@mixin triangle($direction, $width, $height, $color) { /* ... */ }
 ```
 
 **Arguments:**
